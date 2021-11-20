@@ -1,0 +1,139 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: #121721;
+}
+
+nav {
+  font-family: "Kumbh Sans", sans-serif;
+  /* font-family: 'Space Mono', monospace; */
+  font-size: 25px;
+  color: antiquewhite;
+  align-items: center;
+  padding: 0 10vw;
+  display: flex;
+  justify-content: space-between;
+  height: 15vh;
+  width: auto;
+  background: url(./assets/desktop/bg-pattern-header.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 0 0 0 100px;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 22px;
+  width: 22px;
+  left: 6px;
+  bottom: 6px;
+  background-color: #5964e0;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+/* input:checked + .slider {
+    background-color: #2196F3;
+  } */
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.searchBar {
+  height: 1vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.searchBar input {
+  height: 8vh;
+}
+
+.filterTitle {
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  width: 35vw;
+  outline: none;
+  border: none;
+  background-color: #19202d;
+  border-radius: 5px 0 0 5px;
+}
+.filterLocation {
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  width: 25vw;
+  outline: none;
+  border: none;
+  background-color: #19202d;
+  border-left: 1px #6e8098 solid;
+  border-right: 1px #6e8098 solid;
+}
+
+.searchButtonSection {
+  font-family: "Kumbh Sans", sans-serif;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  background-color: #19202d;
+  width: 15vw;
+  border-radius: 0 5px 5px 0;
+}
+
+.searchButton {
+  font-family: "Kumbh Sans", sans-serif;
+font-size: 15px;
+font-weight: 600;
+  width: 6vw;
+  height: 5vh;
+  border-radius: 5px;
+  border: none;
+  background-color: #5964e0;
+color: #ffffff;
+}
