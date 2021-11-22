@@ -24,13 +24,6 @@ nav {
 
 .moonLogo {
   margin-left: 65vw;
-  padding-top: -2px;
-  align-items: center;
-  font-size: px;
-}
-
-.moonLogo svg {
-  font-size: px;
 }
 
 .switch {
@@ -94,6 +87,7 @@ input:checked + .slider:before {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-left: 8vw;
 }
 
 .searchBar input {
@@ -111,7 +105,6 @@ input:checked + .slider:before {
   border: none;
   background-color: #19202d;
   border-radius: 8px 0 0 8px;
-  position: relative;
 }
 
 .svg-Search {
@@ -140,7 +133,7 @@ input:checked + .slider:before {
   position: absolute;
   display: block;
   z-index: 2;
-  margin-right: 30px;
+  margin-right: 220px;
   padding-top: 5px;
   cursor: pointer;
 }
@@ -158,6 +151,7 @@ input:checked + .slider:before {
   background-color: #19202d;
   width: 17vw;
   border-radius: 0 8px 8px 0;
+  margin-right: 3vw;
 }
 
 .searchButton {
@@ -179,6 +173,51 @@ input:checked + .slider:before {
   cursor: pointer;
 }
 
+
+.profileIcon {
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 35px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 3px #16A085 solid;
+  position: relative;
+}
+
+i {
+  position: relative;
+  color: #ffffff;
+  font-size: 35px;
+  transition: all 0.25s ease;
+}
+
+
+.profileIcon::before {
+  position: absolute;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  transition: all 0.25s ease;
+  border-radius: 50%;
+  transition-duration: 0.5s;
+    box-shadow: inset 0 0 0 0px #16A085;
+}
+  
+  .profileIcon:hover::before{
+    box-shadow: inset 0 0 0 40px #16A085; 
+  }
+
+
+
+
 .grid-Page1 {
   margin: 16vh 10vw;
   display: grid;
@@ -196,8 +235,17 @@ input:checked + .slider:before {
 }
 
 .grid-item:hover {
-  animation: ease-out;
+  transform: scale(1.05);
 }
+/* INSIDE EACH GRID ITEM */
+.logo {
+  background-color: #2196f3;
+  width: 50px;
+  border-radius: 8px;
+  margin-left: 20px
+  margin-top: -10px
+}
+
 
 .loadButtonContainer {
   display: flex;
@@ -217,4 +265,9 @@ input:checked + .slider:before {
   height: 6vh;
   border: none;
   margin-bottom: 10vh;
+}
+
+.loadButton:hover {
+  background-color: #939bf4;
+  cursor: pointer;
 }
