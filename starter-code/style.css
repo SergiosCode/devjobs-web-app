@@ -16,7 +16,7 @@ nav {
   display: flex;
   justify-content: space-between;
   height: 15vh;
-  width: auto;
+  width: 100%;
   background: url(./assets/desktop/bg-pattern-header.svg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -286,12 +286,13 @@ i {
 
   .grid-item {
     width: 100vw;
-    margin: 0 30px 0 -15px
+    height: 30vh;
+    margin: 0 50px 0 -15px;
   }
-  .loadButtonContainer{
+  .loadButtonContainer {
     margin-left: 10vh;
   }
-  
+
   .loadButton {
     display: flex;
     align-items: center;
@@ -302,6 +303,14 @@ i {
   .loadButton span {
     flex: none;
     font-size: 20px;
+  }
+
+  .filterTitle {
+    display: none;
+  }
+
+  .searchButtonSection {
+    display: none;
   }
 }
 
