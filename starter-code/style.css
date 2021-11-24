@@ -217,14 +217,17 @@ i {
 }
 
 .grid-Page1 {
+  padding: 30px;
   margin: 16vh 10vw;
   display: grid;
   grid-template-columns: auto auto auto;
-  height: 110vh;
+  height: 108vh;
   grid-gap: 80px 50px;
+  overflow: hidden;
 }
 
 .grid-item {
+  height: 30vh;
   border-radius: 8px;
   background-color: #19202d;
   font-family: "Kumbh Sans", sans-serif;
@@ -266,15 +269,39 @@ i {
 @media only screen and (max-width: 1400px) {
   .grid-Page1 {
     grid-template-columns: auto auto;
-    height: 200vh;
+    height: 190vh;
+  }
+
+  .grid-item {
+    height: 30vh;
   }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 1000px) {
   .grid-Page1 {
     grid-template-columns: auto;
-    height: 400vh;
+    height: 390vh;
     width: 47vh;
+  }
+
+  .grid-item {
+    width: 100vw;
+    margin: 0 30px 0 -15px
+  }
+  .loadButtonContainer{
+    margin-left: 10vh;
+  }
+  
+  .loadButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5vh 16vh;
+  }
+
+  .loadButton span {
+    flex: none;
+    font-size: 20px;
   }
 }
 
