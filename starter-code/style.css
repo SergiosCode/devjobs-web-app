@@ -5,6 +5,7 @@
 
 body {
   background-color: #121721;
+  overflow-x: hidden;
 }
 
 nav {
@@ -16,7 +17,7 @@ nav {
   display: flex;
   justify-content: space-between;
   height: 15vh;
-  width: 100%;
+  width: 80%;
   background: url(./assets/desktop/bg-pattern-header.svg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -149,7 +150,7 @@ input:checked + .slider:before {
   font-family: "Kumbh Sans", sans-serif;
   display: flex;
   align-items: center;
-  font-size: 18px;
+  font-size: 15px;
   color: #ffffff;
   background-color: #19202d;
   width: 17vw;
@@ -266,6 +267,55 @@ i {
   font-size: 18px;
 }
 
+.mobileSearch {
+  display: none;
+}
+
+.mobileFilterTitle {
+  padding-left: 20px;
+  color: #ffffff;
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  width: 70vw;
+  outline: none;
+  border: none;
+  background-color: #19202d;
+  border-radius: 8px;
+  position: relative;
+}
+
+.svg-Options {
+  position: absolute;
+  left: 60%;
+}
+
+.mobileSearchButtonSection {
+  position: absolute;
+  left: 80%;
+  color: #ffffff;
+}
+
+.mobileSearchButton {
+  width: 50px;
+  height: 50px;
+  border-radius: 8px;
+  border: none;
+  color: #ffffff;
+  /* background-color: #5964e0; */
+}
+
+
+.mobileSearchButton:hover {
+  background-color: #939bf4;
+
+}
+
+.mobileSearchButton svg {
+
+  color: #ffffff;
+}
+
 @media only screen and (max-width: 1400px) {
   .grid-Page1 {
     grid-template-columns: auto auto;
@@ -278,16 +328,23 @@ i {
 }
 
 @media only screen and (max-width: 1000px) {
+  .mobileSearch {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+
   .grid-Page1 {
     grid-template-columns: auto;
     height: 390vh;
-    width: 47vh;
+    width: 89%;
+    margin-left: -18px;
   }
 
   .grid-item {
-    width: 100vw;
+    width: 96vw;
     height: 30vh;
-    margin: 0 50px 0 -15px;
+    margin-left: -4px;
   }
   .loadButtonContainer {
     margin-left: 10vh;
@@ -297,6 +354,7 @@ i {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-right: 80px;
     padding: 5vh 16vh;
   }
 
@@ -309,9 +367,27 @@ i {
     display: none;
   }
 
+  .filterLocation {
+    display: none;
+  }
+
   .searchButtonSection {
     display: none;
   }
+
+  .svg-Location {
+    display: none;
+  }
+
+  .svg-Search {
+    display: none;
+  }
+
+  /* .profileIcon {
+    margin-left: 100px;
+  } */
+
+  /* .mobile */
 }
 
 .jobTitle {
