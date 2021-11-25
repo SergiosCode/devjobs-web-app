@@ -325,6 +325,18 @@ i {
   .grid-item {
     height: 30vh;
   }
+
+  .mobileSearch {
+    margin-right: 20px;
+    margin-left: -24px;
+  }
+
+  .profileIcon {
+    width: 45px;
+    height: 45px;
+    font-size: 2px;
+    margin-right: 20px;
+  }
 }
 
 @media only screen and (max-width: 1000px) {
